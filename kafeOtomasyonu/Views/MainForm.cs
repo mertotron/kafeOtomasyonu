@@ -31,6 +31,8 @@ namespace kafeOtomasyonu.Views
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Muhasebe modülü henüz aktif değil.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MuhasebePaneli muhasebePaneli = new MuhasebePaneli();
+            muhasebePaneli.Show();
         }
     }
 }

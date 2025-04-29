@@ -92,6 +92,10 @@
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.7.5.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -197,6 +201,12 @@
     <Compile Include="Views\MasaForm.Designer.cs">
       <DependentUpon>MasaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\MuhasebePaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MuhasebePaneli.Designer.cs">
+      <DependentUpon>MuhasebePaneli.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SiparisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MasaForm.resx">
       <DependentUpon>MasaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MuhasebePaneli.resx">
+      <DependentUpon>MuhasebePaneli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SiparisForm.resx">
       <DependentUpon>SiparisForm.cs</DependentUpon>
