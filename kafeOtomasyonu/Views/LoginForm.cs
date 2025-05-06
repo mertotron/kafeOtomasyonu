@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using kafeOtomasyonu.Controllers;
 using kafeOtomasyonu.Views;
+using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace kafeOtomasyonu.Views
 {
@@ -25,6 +27,7 @@ namespace kafeOtomasyonu.Views
             string sifre = textBox2.Text;
             if (LoginController.GirisYap(kullaniciAdi, sifre))
             {
+
                 // Giriş başarılı
                 MessageBox.Show("Giriş başarılı!");
                 this.Hide();
@@ -43,14 +46,23 @@ namespace kafeOtomasyonu.Views
 
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
+        private async void LoginForm_Load(object sender, EventArgs e)
         {
+            SerialController serialController = new SerialController();
+            await serialController.SyncSerialTableFromServerAsync();
+
             // arka planuı kaldır
             button1.BackColor = Color.Transparent;
             button2.BackColor = Color.Transparent;
             label1.BackColor = Color.Transparent;
             label2.BackColor = Color.Transparent;
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            
         }
     }
 }

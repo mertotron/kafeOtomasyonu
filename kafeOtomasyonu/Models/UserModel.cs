@@ -12,5 +12,6 @@ namespace kafeOtomasyonu.Models
         public string KullaniciAdi { get; set; }
         public string Sifre { get; set; }
         public string Yetki { get; set; } // admin, garson gibi roller
+        public string serialUser { get; set; }
     }
 }

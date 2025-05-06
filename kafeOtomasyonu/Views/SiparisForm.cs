@@ -28,7 +28,6 @@ namespace kafeOtomasyonu.Views
         private void SiparisForm_Load(object sender, EventArgs e)
         {
             label1.Text = $"Masa {masaID}";
-
             List<UrunModel> urnList = SiparisController.UrunleriGetir();
             lstUrunler.DisplayMember = "UrunAdi";
             lstUrunler.ValueMember = "ID";

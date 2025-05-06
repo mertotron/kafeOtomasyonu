@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SiparisForm));
             this.label1 = new System.Windows.Forms.Label();
             this.lstUrunler = new System.Windows.Forms.ListBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnEkle = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
@@ -58,14 +57,6 @@
             this.lstUrunler.Name = "lstUrunler";
             this.lstUrunler.Size = new System.Drawing.Size(266, 615);
             this.lstUrunler.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.textBox2.Location = new System.Drawing.Point(164, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(383, 38);
-            this.textBox2.TabIndex = 5;
             // 
             // numericUpDown1
             // 
@@ -138,7 +129,6 @@
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lstUrunler);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -156,7 +146,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lstUrunler;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.ListBox listBox2;
