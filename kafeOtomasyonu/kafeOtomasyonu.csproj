@@ -171,6 +171,7 @@
     <Compile Include="Controllers\MasaController.cs" />
     <Compile Include="Controllers\SerialController.cs" />
     <Compile Include="Controllers\SiparisController.cs" />
+    <Compile Include="Controllers\UrunController.cs" />
     <Compile Include="Database\Db.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -180,8 +181,13 @@
     </Compile>
     <Compile Include="Helpers\DatabaseHelper.cs" />
     <Compile Include="Helpers\Session.cs" />
+    <Compile Include="Views\MasaIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MasaIslem.Designer.cs">
+      <DependentUpon>MasaIslem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\MasaModel.cs" />
-    <Compile Include="Models\SerialRecord.cs" />
     <Compile Include="Models\SiparisKalemi.cs" />
     <Compile Include="Models\SiparisModel.cs" />
     <Compile Include="Models\UrunModel.cs" />
@@ -224,6 +230,15 @@
     <Compile Include="Views\SiparisForm.Designer.cs">
       <DependentUpon>SiparisForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Urunislem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Urunislem.Designer.cs">
+      <DependentUpon>Urunislem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\MasaIslem.resx">
+      <DependentUpon>MasaIslem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -251,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SiparisForm.resx">
       <DependentUpon>SiparisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Urunislem.resx">
+      <DependentUpon>Urunislem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

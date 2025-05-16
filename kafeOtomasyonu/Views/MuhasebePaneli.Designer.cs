@@ -36,6 +36,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,9 +45,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Aqua;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(12, 30);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 64);
+            this.button1.Size = new System.Drawing.Size(185, 149);
             this.button1.TabIndex = 0;
             this.button1.Text = "BİR AYLIK RAPOR GETİR";
             this.button1.UseVisualStyleBackColor = false;
@@ -55,9 +57,9 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(12, 82);
+            this.button2.Location = new System.Drawing.Point(12, 185);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(185, 64);
+            this.button2.Size = new System.Drawing.Size(185, 149);
             this.button2.TabIndex = 1;
             this.button2.Text = "HAFTALIK RAPOR GETİR";
             this.button2.UseVisualStyleBackColor = false;
@@ -67,9 +69,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(12, 152);
+            this.button3.Location = new System.Drawing.Point(12, 340);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(185, 64);
+            this.button3.Size = new System.Drawing.Size(185, 149);
             this.button3.TabIndex = 2;
             this.button3.Text = "GÜNLÜK RAPOR GETİR";
             this.button3.UseVisualStyleBackColor = false;
@@ -79,9 +81,9 @@
             // 
             this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(12, 735);
+            this.button4.Location = new System.Drawing.Point(12, 650);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(185, 64);
+            this.button4.Size = new System.Drawing.Size(185, 149);
             this.button4.TabIndex = 3;
             this.button4.Text = "VERİ YEDEĞİ AL";
             this.button4.UseVisualStyleBackColor = false;
@@ -109,20 +111,46 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(12, 248);
+            this.button5.Location = new System.Drawing.Point(12, 495);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(185, 64);
+            this.button5.Size = new System.Drawing.Size(185, 149);
             this.button5.TabIndex = 6;
             this.button5.Text = "RAPORU DIŞA AKTAR (EXEL)";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(907, 17);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(185, 388);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "ÜRÜN İŞLEMLERİ";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(907, 411);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(185, 388);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "MASA İŞLEMLERİ";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // MuhasebePaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1340, 811);
+            this.ClientSize = new System.Drawing.Size(1104, 811);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -151,5 +179,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }

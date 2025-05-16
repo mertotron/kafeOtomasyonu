@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Data.SqlClient;
 using System.IO;
+using kafeOtomasyonu.Models;
 
 namespace kafeOtomasyonu.Views
 {
@@ -180,6 +181,18 @@ namespace kafeOtomasyonu.Views
         private void button4_Click(object sender, EventArgs e)
         {
             VeritabaniYedekAl(kafeOtomasyonu.Database.Db.GetConnection());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Urunislem urunIslem = new Urunislem();
+            urunIslem.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            MasaIslem masaIslem = new MasaIslem();
+            masaIslem.ShowDialog();
         }
     }
 }

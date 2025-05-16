@@ -20,7 +20,7 @@ namespace kafeOtomasyonu.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Bu Modül Henüz Aktif Değil");
         }
     }
 }
