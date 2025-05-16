@@ -49,8 +49,9 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(425, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(714, 752);
+            this.dataGridView1.Size = new System.Drawing.Size(714, 594);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // panel2
             // 
@@ -58,9 +59,9 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(12, 246);
+            this.panel2.Location = new System.Drawing.Point(12, 310);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(407, 203);
+            this.panel2.Size = new System.Drawing.Size(407, 296);
             this.panel2.TabIndex = 14;
             // 
             // textBox3
@@ -76,9 +77,9 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.button1.Location = new System.Drawing.Point(10, 126);
+            this.button1.Location = new System.Drawing.Point(10, 140);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(389, 64);
+            this.button1.Size = new System.Drawing.Size(389, 144);
             this.button1.TabIndex = 7;
             this.button1.Text = "MASA SİL";
             this.button1.UseVisualStyleBackColor = false;
@@ -112,7 +113,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(407, 228);
+            this.panel1.Size = new System.Drawing.Size(407, 292);
             this.panel1.TabIndex = 13;
             // 
             // button5
@@ -120,9 +121,9 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.button5.Location = new System.Drawing.Point(10, 142);
+            this.button5.Location = new System.Drawing.Point(10, 128);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(389, 64);
+            this.button5.Size = new System.Drawing.Size(389, 144);
             this.button5.TabIndex = 7;
             this.button5.Text = "MASA EKLE";
             this.button5.UseVisualStyleBackColor = false;
@@ -161,7 +162,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1155, 779);
+            this.ClientSize = new System.Drawing.Size(1155, 624);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

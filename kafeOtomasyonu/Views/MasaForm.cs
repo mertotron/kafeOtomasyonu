@@ -49,7 +49,7 @@ namespace kafeOtomasyonu.Views
                             masaBtn.Tag = masaID;
                             masaBtn.Click += MasaButon_Click;
 
-                            // Panel'e ekle (this.Controls değil!)
+                            // Panel'e ekle 
                             panel1.Controls.Add(masaBtn);
 
                             x += butonGenislik + padding;

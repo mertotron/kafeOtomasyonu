@@ -25,19 +25,21 @@ namespace kafeOtomasyonu.Views
 
         private async void button2_Click(object sender, EventArgs e)
         {
+            // buton 2 tıklandığında controllerlardan loginControllerdan giriş fonksiyonu çağırılacak
+            // girişten true değer dönerse check serial key fonksiyonuna datalar gönderilecek sonra ordan da
+            // true dönerse main form açılacak
             try
             {
                 string kullaniciAdi = textBox1.Text;
                 string sifre = textBox2.Text;
                 if (LoginController.GirisYap(kullaniciAdi, sifre))
                 {
-                    //burayı yeniden yap 2. iç fonksiyon serial kontrolü yapıp bunu sunucu üzerinen kontrol edecek
-
                     UserModel aktifKullanici = Session.AktifKullanici;
                     int userId = aktifKullanici.Id;
                     string userName = aktifKullanici.KullaniciAdi;
                     string userPassword = aktifKullanici.Sifre;
-                    MessageBox.Show(userName + " - " + userId + " - " + userPassword);
+                    //bu satır giden verilerin doğru gidip gitmediğini kontrol etmek için eklenmiştir
+                    //MessageBox.Show(userName + " - " + userId + " - " + userPassword);
                     SerialController serialController = new SerialController();
                     if (await serialController.CheckSerialKey(userName, userPassword, userId) == true)
                     {
@@ -86,9 +88,6 @@ namespace kafeOtomasyonu.Views
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Bu Modül Henüz Aktif Değil");
-        }
+        
     }
 }
